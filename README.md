@@ -15,7 +15,7 @@ This project provides two main functionalities using face recognition:
 Install dependencies with:
 
 ```bash
-pip install opencv-python numpy face_recognition
+pip install -r requirements.txt
 ```
 
 ## 1. Comparing Two Images (`main.py`)
@@ -44,7 +44,7 @@ This will print whether the faces match and the face distance, and show both ima
 
 `Attendance.py` uses your webcam to recognize faces in real time and mark attendance in `Attendance.csv`.
 
-- Place reference images of known people in the `images/` folder. The filename (without extension) will be used as the person's name.
+- Place reference images of known people in the `images/` folder. 
 - When a known face is detected by the webcam, their name and the current time will be recorded in `Attendance.csv`.
 
 ### Usage
@@ -62,8 +62,9 @@ python Attendance.py
 - `Attendance.py`: Script for real-time face recognition attendance using webcam.
 - `images/`: Folder containing reference images for attendance.
 - `Attendance.csv`: Output file for attendance records.
+- `requirements.txt`: Python dependencies for the project.
 
 ## Notes
 - Make sure your images are clear and contain only one face for best results.
 - The attendance system assumes each image in `images/` contains a single face.
-- If you encounter issues with dlib or face_recognition installation, ensure you are using a compatible Python version (3.8–3.11). 
+- If you encounter issues with dlib or face_recognition installation, ensure you are using a compatible Python version (3.8–3.11).
