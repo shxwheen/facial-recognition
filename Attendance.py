@@ -73,17 +73,3 @@ while True:
     cv2.imshow('Video', img)
     cv2.waitKey(1)
 
-
-
-
-
-
-# get image as bgr so we need to convert to rgb first for our library
-
-# orig image
-imgCurry = face_recognition.load_image_file("images/bron.png")
-imgCurry = cv2.cvtColor(imgCurry, cv2.COLOR_BGR2RGB)
-
-# test image
-imgCurryTest = face_recognition.load_image_file("images/currytest.png")
-imgCurryTest = cv2.cvtColor(imgCurryTest, cv2.COLOR_BGR2RGB)
